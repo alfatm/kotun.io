@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Taonga Insland</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* to remove the top and left whitespace */
+		html,
+		body {
+			width: 100vw !important;
+			height: 100vh !important;
+		}
+
+		canvas {
+			background: rgb(0, 0, 0);
+			display: block;
+			width: 100vw !important;
+			height: 100vh !important;
+		}
+	</style>
+</head>
+
+<body>
+	<script type="module">
+		import init from './main.js'
+		init()
+
+		document.addEventListener('contextmenu', function (evt) {
+			evt.preventDefault();
+		})
+	</script>
+</body>
+
+</html>
