@@ -19,13 +19,49 @@
 		canvas {
 			background: rgb(0, 0, 0);
 			display: block;
-			width: 1024px;
-			height: 768px;
+		}
+
+		.loading {
+			margin: auto;
+			text-align: center;
+			vertical-align: middle;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			width: 100vw;
+			height: calc(100vh - 50px);
+			background: gray;
+		}
+
+		.loading>* {
+			z-index: 0;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	</style>
 </head>
 
 <body>
+	<div id="loading" class="loading">
+		<h2>Loading...</h2>
+	</div>
+	<script>
+		function loading() {
+			let elements = document.getElementsByTagName("canvas");
+			if (elements.length > 0) {
+				document.getElementById('loading').remove();
+				return;
+			}
+			setTimeout(function () {
+				loading();
+			}, 100);
+		}
+		loading();
+	</script>
 	<script type="module">
 		import init from './main.js'
 		init()
