@@ -1,12 +1,11 @@
 /* tslint:disable */
 /* eslint-disable */
-export const memory: WebAssembly.Memory;
-export function main(a: number, b: number): number;
 export function wgpu_render_pass_draw_indexed(a: number, b: number, c: number, d: number, e: number, f: number): void;
 export function wgpu_render_pass_draw(a: number, b: number, c: number, d: number, e: number): void;
 export function wgpu_render_pass_set_pipeline(a: number, b: number): void;
 export function wgpu_render_pass_set_bind_group(a: number, b: number, c: number, d: number, e: number): void;
 export function wgpu_render_pass_set_vertex_buffer(a: number, b: number, c: number, d: number, e: number): void;
+export function main(a: number, b: number): number;
 export function wgpu_render_bundle_set_bind_group(a: number, b: number, c: number, d: number, e: number): void;
 export function wgpu_render_bundle_set_pipeline(a: number, b: number): void;
 export function wgpu_render_bundle_set_vertex_buffer(a: number, b: number, c: number, d: number, e: number): void;
@@ -47,9 +46,10 @@ export function wgpu_compute_pass_insert_debug_marker(a: number, b: number, c: n
 export function wgpu_compute_pass_write_timestamp(a: number, b: number, c: number): void;
 export function wgpu_compute_pass_begin_pipeline_statistics_query(a: number, b: number, c: number): void;
 export function wgpu_compute_pass_end_pipeline_statistics_query(a: number): void;
+export const memory: WebAssembly.Memory;
 export function __wbindgen_malloc(a: number): number;
 export function __wbindgen_realloc(a: number, b: number, c: number): number;
-export const __wbindgen_export_2: WebAssembly.Table;
+export const __wbindgen_export_3: WebAssembly.Table;
 export function _dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__hd75e6272cf95242b(a: number, b: number): void;
 export function _dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h37dc1657834641e9(a: number, b: number, c: number): void;
 export function _dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h5b9bb7d0613991aa(a: number, b: number, c: number): void;
